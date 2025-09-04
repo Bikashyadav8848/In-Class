@@ -1,0 +1,28 @@
+
+public class main{
+    public static void main(String[] args) {
+  
+    Dog dc = new Dog();
+    dc.sound();
+    dc.eat();
+  }
+}
+
+//parent class or super class or Base class
+class Animal{
+  void sound(){
+  System.out.println("Animal makes a sound");
+  }
+}
+
+//child class or sub class or derived class
+class Dog extends Animal{
+  @Override
+  void sound(){
+    System.out.println("Dog barks");
+  }
+  void eat(){
+    System.out.println("Dog is eat");
+  }
+}  
+
